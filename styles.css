@@ -9,23 +9,23 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #efefef;
 }
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: rgb(255, 255, 255);
 }
 a:hover {
-  color: #6633ff;
+  color: #9b9a9c;
 }
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: rgba(0, 0, 0, 0.301);
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -40,7 +40,7 @@ a:hover {
   padding: 0;
 }
 
-.nav .name {
+.nav .home {
     display: block;
     margin-right: auto;
     color: white;
@@ -51,14 +51,12 @@ a:hover {
 .nav a {
   transition: all .5s;
 }
-.nav a:hover {
-  color: white
-}
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/daniel-von-appen-504119-unsplas2h.jpg') no-repeat top center ;
   background-size: cover;
+  background-attachment: fixed;
   overflow: hidden;
   padding-top: 60px;
 }
@@ -70,23 +68,28 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 0.1px solid white;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  outline: none;
+  border-color: white;
+  box-shadow: 0 0 10px white;
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color: rgb(24, 138, 184);
+  color: #efefef;
   padding: 10px;
+  border: 3px solid;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: rgb(24, 138, 184);
+  color: #efefef;
+  border: 3px solid;
+  border-radius: 5px;
 }
 .card {
   margin: 30px;
@@ -94,12 +97,12 @@ header .profile-image:hover {
   max-width: 500px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #ccc;
+  border-bottom: 4px solid rgba(204, 204, 204, 0);
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #ccc;
 }
 
 ul.skills {
